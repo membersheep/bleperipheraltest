@@ -1,0 +1,429 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4E7A67721A79298700F4A509 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E7A67711A79298700F4A509 /* AppDelegate.m */; };
+		4E7A67741A79298800F4A509 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E7A67731A79298800F4A509 /* main.m */; };
+		4E7A67761A79298800F4A509 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E7A67751A79298800F4A509 /* Images.xcassets */; };
+		4E7A67791A79298800F4A509 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E7A67771A79298800F4A509 /* MainMenu.xib */; };
+		4E7A67851A79298800F4A509 /* BLEPeripheralTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E7A67841A79298800F4A509 /* BLEPeripheralTestTests.m */; };
+		4E7A678F1A792A2900F4A509 /* IOBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E7A678E1A792A2900F4A509 /* IOBluetooth.framework */; };
+		4E7A67911A792A2F00F4A509 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E7A67901A792A2F00F4A509 /* Cocoa.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4E7A677F1A79298800F4A509 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4E7A67631A79298700F4A509 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4E7A676A1A79298700F4A509;
+			remoteInfo = BLEPeripheralTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4E7A676B1A79298700F4A509 /* BLEPeripheralTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BLEPeripheralTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E7A676F1A79298700F4A509 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4E7A67701A79298700F4A509 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4E7A67711A79298700F4A509 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4E7A67731A79298800F4A509 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4E7A67751A79298800F4A509 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		4E7A67781A79298800F4A509 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		4E7A677E1A79298800F4A509 /* BLEPeripheralTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BLEPeripheralTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E7A67831A79298800F4A509 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4E7A67841A79298800F4A509 /* BLEPeripheralTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLEPeripheralTestTests.m; sourceTree = "<group>"; };
+		4E7A678E1A792A2900F4A509 /* IOBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOBluetooth.framework; path = System/Library/Frameworks/IOBluetooth.framework; sourceTree = SDKROOT; };
+		4E7A67901A792A2F00F4A509 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4E7A67681A79298700F4A509 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E7A67911A792A2F00F4A509 /* Cocoa.framework in Frameworks */,
+				4E7A678F1A792A2900F4A509 /* IOBluetooth.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E7A677B1A79298800F4A509 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4E7A67621A79298700F4A509 = {
+			isa = PBXGroup;
+			children = (
+				4E7A676D1A79298700F4A509 /* BLEPeripheralTest */,
+				4E7A67811A79298800F4A509 /* BLEPeripheralTestTests */,
+				4E7A67921A79366E00F4A509 /* Frameworks */,
+				4E7A676C1A79298700F4A509 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4E7A676C1A79298700F4A509 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4E7A676B1A79298700F4A509 /* BLEPeripheralTest.app */,
+				4E7A677E1A79298800F4A509 /* BLEPeripheralTestTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4E7A676D1A79298700F4A509 /* BLEPeripheralTest */ = {
+			isa = PBXGroup;
+			children = (
+				4E7A67701A79298700F4A509 /* AppDelegate.h */,
+				4E7A67711A79298700F4A509 /* AppDelegate.m */,
+				4E7A67751A79298800F4A509 /* Images.xcassets */,
+				4E7A67771A79298800F4A509 /* MainMenu.xib */,
+				4E7A676E1A79298700F4A509 /* Supporting Files */,
+			);
+			path = BLEPeripheralTest;
+			sourceTree = "<group>";
+		};
+		4E7A676E1A79298700F4A509 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4E7A676F1A79298700F4A509 /* Info.plist */,
+				4E7A67731A79298800F4A509 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4E7A67811A79298800F4A509 /* BLEPeripheralTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				4E7A67841A79298800F4A509 /* BLEPeripheralTestTests.m */,
+				4E7A67821A79298800F4A509 /* Supporting Files */,
+			);
+			path = BLEPeripheralTestTests;
+			sourceTree = "<group>";
+		};
+		4E7A67821A79298800F4A509 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4E7A67831A79298800F4A509 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4E7A67921A79366E00F4A509 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4E7A67901A792A2F00F4A509 /* Cocoa.framework */,
+				4E7A678E1A792A2900F4A509 /* IOBluetooth.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4E7A676A1A79298700F4A509 /* BLEPeripheralTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4E7A67881A79298800F4A509 /* Build configuration list for PBXNativeTarget "BLEPeripheralTest" */;
+			buildPhases = (
+				4E7A67671A79298700F4A509 /* Sources */,
+				4E7A67681A79298700F4A509 /* Frameworks */,
+				4E7A67691A79298700F4A509 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BLEPeripheralTest;
+			productName = BLEPeripheralTest;
+			productReference = 4E7A676B1A79298700F4A509 /* BLEPeripheralTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4E7A677D1A79298800F4A509 /* BLEPeripheralTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4E7A678B1A79298800F4A509 /* Build configuration list for PBXNativeTarget "BLEPeripheralTestTests" */;
+			buildPhases = (
+				4E7A677A1A79298800F4A509 /* Sources */,
+				4E7A677B1A79298800F4A509 /* Frameworks */,
+				4E7A677C1A79298800F4A509 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4E7A67801A79298800F4A509 /* PBXTargetDependency */,
+			);
+			name = BLEPeripheralTestTests;
+			productName = BLEPeripheralTestTests;
+			productReference = 4E7A677E1A79298800F4A509 /* BLEPeripheralTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4E7A67631A79298700F4A509 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = waresme;
+				TargetAttributes = {
+					4E7A676A1A79298700F4A509 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					4E7A677D1A79298800F4A509 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 4E7A676A1A79298700F4A509;
+					};
+				};
+			};
+			buildConfigurationList = 4E7A67661A79298700F4A509 /* Build configuration list for PBXProject "BLEPeripheralTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4E7A67621A79298700F4A509;
+			productRefGroup = 4E7A676C1A79298700F4A509 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4E7A676A1A79298700F4A509 /* BLEPeripheralTest */,
+				4E7A677D1A79298800F4A509 /* BLEPeripheralTestTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4E7A67691A79298700F4A509 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E7A67761A79298800F4A509 /* Images.xcassets in Resources */,
+				4E7A67791A79298800F4A509 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E7A677C1A79298800F4A509 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4E7A67671A79298700F4A509 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E7A67741A79298800F4A509 /* main.m in Sources */,
+				4E7A67721A79298700F4A509 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E7A677A1A79298800F4A509 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E7A67851A79298800F4A509 /* BLEPeripheralTestTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4E7A67801A79298800F4A509 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4E7A676A1A79298700F4A509 /* BLEPeripheralTest */;
+			targetProxy = 4E7A677F1A79298800F4A509 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4E7A67771A79298800F4A509 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4E7A67781A79298800F4A509 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4E7A67861A79298800F4A509 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		4E7A67871A79298800F4A509 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		4E7A67891A79298800F4A509 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = BLEPeripheralTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4E7A678A1A79298800F4A509 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = BLEPeripheralTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		4E7A678C1A79298800F4A509 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BLEPeripheralTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BLEPeripheralTest.app/Contents/MacOS/BLEPeripheralTest";
+			};
+			name = Debug;
+		};
+		4E7A678D1A79298800F4A509 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BLEPeripheralTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BLEPeripheralTest.app/Contents/MacOS/BLEPeripheralTest";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4E7A67661A79298700F4A509 /* Build configuration list for PBXProject "BLEPeripheralTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E7A67861A79298800F4A509 /* Debug */,
+				4E7A67871A79298800F4A509 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4E7A67881A79298800F4A509 /* Build configuration list for PBXNativeTarget "BLEPeripheralTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E7A67891A79298800F4A509 /* Debug */,
+				4E7A678A1A79298800F4A509 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		4E7A678B1A79298800F4A509 /* Build configuration list for PBXNativeTarget "BLEPeripheralTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E7A678C1A79298800F4A509 /* Debug */,
+				4E7A678D1A79298800F4A509 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4E7A67631A79298700F4A509 /* Project object */;
+}
