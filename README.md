@@ -1,4 +1,4 @@
-# README #
+# BLEPeripheralTest #
 
 ### What is this repository for? ###
 
