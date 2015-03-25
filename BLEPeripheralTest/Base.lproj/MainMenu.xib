@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="6751" systemVersion="13F1066" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6254"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6751"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
@@ -14,7 +14,8 @@
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <customObject id="Voe-Tx-rLC" customClass="AppDelegate">
             <connections>
-                <outlet property="button" destination="E1f-CM-StY" id="YIu-lV-RJ7"/>
+                <outlet property="bluButton" destination="E1f-CM-StY" id="FmM-hL-PG6"/>
+                <outlet property="redButton" destination="aO4-8u-Bt0" id="s6g-8r-EeZ"/>
                 <outlet property="window" destination="QvC-M9-y7g" id="gIp-Ho-8D9"/>
             </connections>
         </customObject>
@@ -677,9 +678,19 @@
                 <rect key="frame" x="0.0" y="0.0" width="480" height="360"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="E1f-CM-StY">
-                        <rect key="frame" x="179" y="163" width="123" height="32"/>
-                        <buttonCell key="cell" type="push" title="Push Me" bezelStyle="rounded" alignment="center" enabled="NO" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="2md-LJ-HXa">
+                    <button verticalHuggingPriority="750" fixedFrame="YES" tag="1" translatesAutoresizingMaskIntoConstraints="NO" id="aO4-8u-Bt0" userLabel="button-red">
+                        <rect key="frame" x="137" y="215" width="207" height="125"/>
+                        <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" image="button-red" imagePosition="overlaps" alignment="center" enabled="NO" imageScaling="proportionallyDown" inset="2" id="ssh-rL-d0A">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="buttonPressed:" target="Voe-Tx-rLC" id="YGu-BC-hOa"/>
+                        </connections>
+                    </button>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" tag="2" translatesAutoresizingMaskIntoConstraints="NO" id="E1f-CM-StY" userLabel="button-blu">
+                        <rect key="frame" x="137" y="20" width="207" height="127"/>
+                        <buttonCell key="cell" type="bevel" bezelStyle="rounded" image="button-blu" imagePosition="overlaps" alignment="center" enabled="NO" imageScaling="proportionallyDown" inset="2" id="2md-LJ-HXa">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -689,6 +700,11 @@
                     </button>
                 </subviews>
             </view>
+            <point key="canvasLocation" x="148" y="158"/>
         </window>
     </objects>
+    <resources>
+        <image name="button-blu" width="599" height="360"/>
+        <image name="button-red" width="599" height="360"/>
+    </resources>
 </document>

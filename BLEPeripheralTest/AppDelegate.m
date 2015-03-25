@@ -31,7 +31,8 @@
     if (CBPeripheralManagerStatePoweredOn == peripheral.state)
     {
         NSLog(@"peripheralManagerDidUpdateState: PoweredOn");
-        self.button.enabled = YES;
+        self.redButton.enabled = YES;
+        self.bluButton.enabled = YES;
         
         NSData *button = [@"button" dataUsingEncoding:NSUTF8StringEncoding];
         CBMutableCharacteristic *characteristic = [[CBMutableCharacteristic alloc] initWithType:[CBUUID UUIDWithString:@"b71e"]
@@ -46,7 +47,8 @@
     }
     else
     {
-        self.button.enabled = NO;
+        self.redButton.enabled = NO;
+        self.bluButton.enabled = NO;
         [peripheral stopAdvertising];
         [peripheral removeAllServices];
     }
@@ -73,10 +75,22 @@
 
 - (IBAction)buttonPressed:(id)sender
 {
-    NSLog(@"update peripheral value");
-    [self.peripheralManager updateValue:[@"button ON" dataUsingEncoding:NSUTF8StringEncoding]
-                      forCharacteristic:[self.service.characteristics firstObject]
-                   onSubscribedCentrals:nil];
+    switch ([(NSButton*)sender tag]) {
+        case 1:
+            [self.peripheralManager updateValue:[@"REDBUTTON" dataUsingEncoding:NSUTF8StringEncoding]
+                              forCharacteristic:[self.service.characteristics firstObject]
+                           onSubscribedCentrals:nil];
+            break;
+        case 2:
+            [self.peripheralManager updateValue:[@"BLUEBUTTON" dataUsingEncoding:NSUTF8StringEncoding]
+                              forCharacteristic:[self.service.characteristics firstObject]
+                           onSubscribedCentrals:nil];
+            break;
+            
+        default:
+            break;
+    }
+    NSLog(@"Peripheral value updated");
 }
 
 @end

@@ -11,7 +11,8 @@
 
 @interface AppDelegate : NSObject <NSApplicationDelegate, CBPeripheralManagerDelegate>
 
-@property (nonatomic, strong) IBOutlet NSButton *button;
+@property (nonatomic, strong) IBOutlet NSButton *redButton;
+@property (nonatomic, strong) IBOutlet NSButton *bluButton;
 
 - (IBAction)buttonPressed:(id)sender;
 

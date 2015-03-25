@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>E6C25ADF-369B-4011-AA1B-2B34FAE31E1A</string>
+	<key>IDESourceControlProjectName</key>
+	<string>BLEPeripheralTest</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>D4DE63880660548FDAE543CA8B3510F117B4C89F</key>
+		<string>https://bitbucket.org/membersheep/bleperipheraltest.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>BLEPeripheralTest.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>D4DE63880660548FDAE543CA8B3510F117B4C89F</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://bitbucket.org/membersheep/bleperipheraltest.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>D4DE63880660548FDAE543CA8B3510F117B4C89F</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>D4DE63880660548FDAE543CA8B3510F117B4C89F</string>
+			<key>IDESourceControlWCCName</key>
+			<string>BLEPeripheralTest</string>
+		</dict>
+	</array>
+</dict>
+</plist>
